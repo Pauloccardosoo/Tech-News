@@ -1,0 +1,175 @@
+#featured {
+  img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    /* SERVE PARA OCUPAR O ESPAÇO SOBRANDO COM A IMAGEM */
+  }
+}
+
+/* fazer o degrade da imagem */
+.card {
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    top: 50%;
+    background: linear-gradient(180deg, transparent 0%, #020617);
+  }
+  figcaption {
+    position: absolute;
+    bottom: 0;
+
+    padding: 24px;
+
+    &:has(.text-lg) {
+      padding: 12px;
+    }
+  }
+
+  h2 {
+    margin-top: 8px;
+  }
+}
+
+section header {
+  border-top: 1px solid var(--strok);
+  padding-block: 12px 24px;
+  font: var(--text-span);
+  a {
+    justify-self: end;
+    align-items: center;
+    gap: 8px;
+    span {
+      background-image: url(../icones/ArrowRight.svg);
+      width: 16px;
+      height: 16px;
+    }
+
+    &:hover span {
+      background-image: url(../icones/teste22.svg);
+    }
+  }
+}
+
+#colunabranca {
+  /* Line 148 */
+
+  position: relative;
+  margin-left: 560px;
+  width: 1220px;
+  height: 0px;
+  left: 31px;
+  top: 25px;
+
+  border: 1px solid #b6afaf5e;
+}
+
+#weekly {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  margin-left: 593px;
+
+  & > div {
+    grid-template-columns: repeat(4, 292px);
+  }
+
+  img {
+    height: 160px;
+  }
+
+  figure {
+    position: relative;
+  }
+
+  .content-tag {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+  }
+  p {
+    margin-top: 8px;
+    font-weight: 800;
+  }
+}
+
+#setadireita {
+  margin-right: 593px;
+}
+
+.gap-32 {
+  gap: 32px;
+}
+
+#primeiradalista {
+  width: 176px;
+  height: 176px;
+  margin-left: 592px;
+  border-radius: 6px;
+}
+
+#iniciofinal {
+  margin-left: 592px;
+}
+
+#vertudoultimo {
+  margin-right: 565px;
+}
+
+#texto1 {
+  text-align: justify;
+  gap: 30px;
+  max-width: 592px;
+  margin-right: 985px;
+}
+
+#texto2 {
+  text-align: justify;
+  gap: 30px;
+  max-width: 592px;
+  margin-right: 890px;
+}
+
+#texto3 {
+  text-align: justify;
+  gap: 30px;
+  max-width: 592px;
+  margin-right: 890px;
+}
+
+#texto4 {
+  text-align: justify;
+  gap: 30px;
+  max-width: 592px;
+  margin-right: 890px;
+  padding-bottom: 8px;
+}
+
+#colunabranca2 {
+  /* Line 148 */
+
+  position: relative;
+  margin-left: 560px;
+  width: 1220px;
+  height: 0px;
+  left: 31px;
+  top: -25px;
+
+  border: 1px solid #b6afaf5e;
+}
+
+.content-tag {
+  margin-bottom: 8px;
+}
+
+h4 {
+  color: rgb(172, 169, 166);
+  font-size: 14px;
+  font-family: var(--text-span);
+  text-align: center;
+  margin-bottom: 30px;
+}
